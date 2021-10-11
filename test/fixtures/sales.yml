@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 2021-10-10 10:43:44
+  account: one
+  precio_venta: 1
+  monto_cliente: 1
+  ganancia: 1
+  vendido: false
+  pagado: false
+
+two:
+  fecha: 2021-10-10 10:43:44
+  account: two
+  precio_venta: 1
+  monto_cliente: 1
+  ganancia: 1
+  vendido: false
+  pagado: false

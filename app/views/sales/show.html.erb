@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @sale.fecha %>
+</p>
+
+<p>
+  <strong>Account:</strong>
+  <%= @sale.account_id %>
+</p>
+
+<p>
+  <strong>Precio venta:</strong>
+  <%= @sale.precio_venta %>
+</p>
+
+<p>
+  <strong>Monto cliente:</strong>
+  <%= @sale.monto_cliente %>
+</p>
+
+<p>
+  <strong>Ganancia:</strong>
+  <%= @sale.ganancia %>
+</p>
+
+<p>
+  <strong>Vendido:</strong>
+  <%= @sale.vendido %>
+</p>
+
+<p>
+  <strong>Pagado:</strong>
+  <%= @sale.pagado %>
+</p>
+
+<%= link_to 'Edit', edit_sale_path(@sale) %> |
+<%= link_to 'Back', sales_path %>

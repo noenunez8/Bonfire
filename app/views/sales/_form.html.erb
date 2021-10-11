@@ -1,0 +1,52 @@
+<%= form_with(model: sale) do |form| %>
+  <% if sale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sale.errors.count, "error") %> prohibited this sale from being saved:</h2>
+
+      <ul>
+        <% sale.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.datetime_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :account_id %>
+    <%= form.text_field :account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precio_venta %>
+    <%= form.number_field :precio_venta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :monto_cliente %>
+    <%= form.number_field :monto_cliente %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ganancia %>
+    <%= form.number_field :ganancia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendido %>
+    <%= form.check_box :vendido %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pagado %>
+    <%= form.check_box :pagado %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
